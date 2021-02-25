@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dough Calculator</title>
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+    <script language="JavaScript">
+        function doughCalc() {
+            var LSN = document.getElementById("LSN").value;
+            var LSM = document.getElementById("LSM").value;
+            var MSN = document.getElementById("MSN").value;
+            var MSM = document.getElementById("MSM").value;
+            var SSN = document.getElementById("SSN").value;
+            var SSM = document.getElementById("SSM").value;
+            var MiSN = document.getElementById("MiSN").value;
+            var MiSM = document.getElementById("MiSM").value;
+            var DBM = document.getElementById("DBM").value;
+            var totalLS = (LSN - LSM) / 28;
+            var totalMS = (MSN - MSM) / 40;
+            var totalSS = (SSN - SSM) / 62;
+            var totalMiS = (MiSN - MiSM) / 105;
+            var grandTotal = totalLS + totalMS + totalSS + totalMiS;
+            var need = grandTotal - DBM;
+            document.getElementById('Skin Display').innerHTML = Math.round(grandTotal * 10) / 10;
+            document.getElementById('Needed').innerHTML = Math.round(need * 10) / 10;}
+    </script>
+</head>
+<body>
+  <!-- user input for tomorrow's skin totals  -->
+  <label class="headings"><b>Skins Needed</b></label>
+  <br>
+  <label class="size">Large:</label>
+  <input type="number" name="message" id="LSN" class="userBox">
+  <br>
+  <label class="size">Medium:</label>
+  <input type="number" name="message" id="MSN" class="userBox">
+  <br>
+  <label class="size">Small:</label>
+  <input type="number" name="message" id="SSN" class="userBox">
+  <br>
+  <label class="size">Mini:</label>
+  <input type="number" name="message" id="MiSN" class="userBox">
+  <br>
+  <br>
+  <!-- user input for available skin numbers -->
+  <label class="headings"><b>Skins Available (Walk-In + Pizza Table)</b></label>
+  <br>
+  <label class="size">Large:</label>
+  <input type="number" name="message" id="LSM" class="userBox">
+  <br>
+  <label class="size">Medium:</label>
+  <input type="number" name="message" id="MSM" class="userBox">
+  <br>
+  <label class="size">Small:</label>
+  <input type="number" name="message" id="SSM" class="userBox">
+  <br>
+  <label class="size">Mini:</label>
+  <input type="number" name="message" id="MiSM" class="userBox">
+  <br>
+  <br>
+  <!-- user input for dough buckets and submission -->
+  <label><b>Dough Buckets Made: </b></label>
+  <input type="number" name="message" id="DBM" class="userBox">
+  <br>
+  <br>
+
+  <input type="submit" onclick="doughCalc();" value="Show Me the Dough"><br/>
+  <label id="bucketsTotal" class="newLabel">Total buckets needed for tomorrow:</label>
+  <span id='Skin Display' class="results"></span>
+  <label id="toMake" class="newLabel">Remaining to be made: </label>
+  <span id='Needed' class="results"></span>
+  
+    
+</body>
+</html>

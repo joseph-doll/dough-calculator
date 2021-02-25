@@ -1,0 +1,40 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.newLabel{
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.results {
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+}
+
+.headings {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin: 5px;
+}
+
+.size {
+    margin: 10px;
+
+}
+
+.userBox {
+    margin-top: 10px;
+    display: inline-block;
+}
