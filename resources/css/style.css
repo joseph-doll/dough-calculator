@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    align-items: left;
     background-color: black;
     color: white;
     text-overflow: wrap;
@@ -37,6 +36,7 @@ body {
 
 .userBox {
     display: inline-block;
+    box-align: right;
 
 }
 
