@@ -8,55 +8,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dough Calculator</title>
+  <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
   <link rel="stylesheet" href="resources/css/style.css" type="text/css">
   <script src="resources/javascript/script.js"></script>
 </head>
-<header>
-</header>
+<header></header>
 <body onload="tomorrow()">
+
   <!-- user input for tomorrow's skin totals  -->
-  <label class="headings">TODAY'S DOUGH #s</label>
+  <h1 class="headings">TODAY'S DOUGH #s</h1>
   <br>
-  <label class="size">Large:</label>
-  <input type="number" name="message" id="LSN" class="userBox">
+
+  <p class="inlineBlock">Large:</p>
+  <input type="number" id="LSN" class="userBox">
   <br>
-  <label class="size">Medium:</label>
-  <input type="number" name="message" id="MSN" class="userBox">
+
+  <p class="inlineBlock">Medium:</p>
+  <input type="number" id="MSN" class="userBox">
   <br>
-  <label class="size">Small:</label>
-  <input type="number" name="message" id="SSN" class="userBox">
+
+  <p class="inlineBlock">Small:</p>
+  <input type="number" id="SSN" class="userBox">
   <br>
-  <label class="size">Mini:</label>
-  <input type="number" name="message" id="MiSN" class="userBox">
+
+  <p class="inlineBlock">Mini:</p>
+  <input type="number" id="MiSN" class="userBox">
   <br>
+
   <br>
   <!-- user input for available skin numbers -->
-  <label class="headings">SKINS LEFT</label>
+  <h1 class="headings">SKINS LEFT</h1>
   <br>
-  <label class="size">Large:</label>
-  <input type="number" name="message" id="LSM" class="userBox">
+
+  <p class="inlineBlock">Large:</p>
+  <input type="number" id="LSM" class="userBox">
   <br>
-  <label class="size">Medium:</label>
-  <input type="number" name="message" id="MSM" class="userBox">
+
+  <p class="inlineBlock">Medium:</p>
+  <input type="number" id="MSM" class="userBox">
   <br>
-  <label class="size">Small:</label>
-  <input type="number" name="message" id="SSM" class="userBox">
+
+  <p class="inlineBlock">Small:</p>
+  <input type="number" id="SSM" class="userBox">
   <br>
-  <label class="size">Mini:</label>
-  <input type="number" name="message" id="MiSM" class="userBox">
+
+  <p class="inlineBlock">Mini:</p>
+  <input type="number" id="MiSM" class="userBox">
   <br>
+
   <br>
   <!-- user input for dough buckets and submission -->
-  <label class="size">DOUGH BUCKETS MADE</label>
-  <input type="number" name="message" id="DBM" class="userBox">
+  <p class="inlineBlock">BUCKETS MADE</p>
+  <input type="number" id="DBM" class="userBox">
   <br>
-  <br>
+
   <!-- calculations/results -->
-  <input type="submit" onclick="doughCalc();" value="Calculate Dough Numbers" class="myButton"><br/>
-  <label id="bucketsTotal" class="newLabel">NEEDED FOR <label id="tomorrow"></label></span></label>
-  <span id='Skin Display' class="results"></span>
+  <input type="submit" onclick="doughCalc();" value="CALCULATE" class="myButton"><br/>
+
+  <h1 id="bucketsTotal" class="inlineBlock">NEEDED FOR <p class="new" id="tomorrow"></p></h1>
+
+  <div id='Skin Display' class="results"></div>
+
   <br>
-  <label id="toMake" class="newLabel">LEFT TO MAKE</label>
-  <span id='Needed' class="results"></span>
+
+  <h1 id="toMake">LEFT TO MAKE</h1>
+
+  <div id='Needed' class="results green"></div>
+
 </body>
+
 </html>

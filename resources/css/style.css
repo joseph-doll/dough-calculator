@@ -1,57 +1,73 @@
-html {
-    font-size: 16px;
-}
-
 header {
-    display: block;
-    height: 1.5rem;
+    height: 2rem;
 }
 
 body {
-    text-align: center;
-    text-justify: auto;
     background-color: black;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-
+    margin: 1rem;
+    padding: 0;
+    width: auto;
+    text-align: center;
 }
 
-input, select {
-    font-size: 100%;
-}
-
-.newLabel{
-    font-size: 2rem;
-    display: block;
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 .results {
     font-size: 2rem;
-    display: block;
-    margin-top: 15px;
+    margin-top: 1px;
+    font-weight: bold;
 }
 
 .headings {
-    font-size: 2rem;
-    display: block;
     margin: 0 0 0 0;
-}
-
-.size {
-    margin: 0 0 0 0;
-}
-
-.userBox {
-    display: inline-block;
-
 }
 
 .myButton {
-    text-align: center;
-    margin: 1.5rem 0 3rem 0;
+    
+    margin: 1rem 0 1rem 0;
     
 }
 
-#Needed {
-    color:rgb(0, 255, 0);
+.green {
+    color: #00FF00;
 }
+
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.userBox {
+    float: right;
+    clear: both;
+}
+
+p {
+    font-size: .75rem;
+    display: inline-block;
+    font-weight: lighter;
+    justify-content:space-between;
+}
+
+.block {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 .new {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
