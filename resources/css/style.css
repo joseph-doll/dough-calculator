@@ -3,10 +3,10 @@ html {
 }
 
 body {
+    text-align: right;
     background-color: black;
     color: white;
     text-overflow: wrap;
-    text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
 }
 .newLabel{
@@ -36,7 +36,6 @@ body {
 
 .userBox {
     display: inline-block;
-    box-align: right;
 
 }
 
