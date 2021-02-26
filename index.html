@@ -1,38 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- font Josefin Sans reg/light/bold -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dough Calculator</title>
-    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
-    <script language="JavaScript">
-        function doughCalc() {
-            var LSN = document.getElementById("LSN").value;
-            var LSM = document.getElementById("LSM").value;
-            var MSN = document.getElementById("MSN").value;
-            var MSM = document.getElementById("MSM").value;
-            var SSN = document.getElementById("SSN").value;
-            var SSM = document.getElementById("SSM").value;
-            var MiSN = document.getElementById("MiSN").value;
-            var MiSM = document.getElementById("MiSM").value;
-            var DBM = document.getElementById("DBM").value;
-            var totalLS = (LSN - LSM) / 28;
-            var totalMS = (MSN - MSM) / 40;
-            var totalSS = (SSN - SSM) / 62;
-            var totalMiS = (MiSN - MiSM) / 105;
-            var grandTotal = totalLS + totalMS + totalSS + totalMiS;
-            var need = grandTotal - DBM;
-            document.getElementById('Skin Display').innerHTML = Math.round(grandTotal * 10) / 10;
-            document.getElementById('Needed').innerHTML = Math.round(need * 10) / 10;}
-    </script>
+  <!-- font Josefin Sans reg/light/bold -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dough Calculator</title>
+  <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+  <script src="resources/javascript/script.js"></script>
 </head>
-<body>
+<header>
+</header>
+<body onload="tomorrow()">
   <!-- user input for tomorrow's skin totals  -->
-  <label class="headings"><b>Skins Needed</b></label>
+  <label class="headings">TODAY'S DOUGH #s</label>
   <br>
   <label class="size">Large:</label>
   <input type="number" name="message" id="LSN" class="userBox">
@@ -48,7 +31,7 @@
   <br>
   <br>
   <!-- user input for available skin numbers -->
-  <label class="headings"><b>Skins Available (Walk-In + Pizza Table)</b></label>
+  <label class="headings">SKINS LEFT</label>
   <br>
   <label class="size">Large:</label>
   <input type="number" name="message" id="LSM" class="userBox">
@@ -64,18 +47,16 @@
   <br>
   <br>
   <!-- user input for dough buckets and submission -->
-  <label class="size"><b>Dough Buckets Made: </b></label>
+  <label class="size">DOUGH BUCKETS MADE</label>
   <input type="number" name="message" id="DBM" class="userBox">
   <br>
   <br>
-
+  <!-- calculations/results -->
   <input type="submit" onclick="doughCalc();" value="Calculate Dough Numbers" class="myButton"><br/>
-  <label id="bucketsTotal" class="newLabel">Amount needed for tomorrow: </label>
+  <label id="bucketsTotal" class="newLabel">NEEDED FOR <label id="tomorrow"></label></span></label>
   <span id='Skin Display' class="results"></span>
   <br>
-  <label id="toMake" class="newLabel">Amount remaining to be made: </label>
+  <label id="toMake" class="newLabel">LEFT TO MAKE</label>
   <span id='Needed' class="results"></span>
-  
-    
 </body>
 </html>
