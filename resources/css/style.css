@@ -1,5 +1,5 @@
 header {
-    height: 2rem;
+    height: .5rem;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     margin: 1rem;
     padding: 0;
     width: auto;
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 
 .results {
     font-size: 2rem;
-    margin-top: 1px;
+    margin-top: 1rem;
     font-weight: bold;
 }
 
@@ -28,8 +28,11 @@ h1 {
 }
 
 .myButton {
+    background-color: white;
+    margin: 1.5rem 0 1.5rem 0;
+    font-weight: normal;
     
-    margin: 1rem 0 1rem 0;
+
     
 }
 
@@ -50,25 +53,24 @@ h1 {
     float: right;
     clear: both;
     margin-left: 1.5rem;
+    max-width: 8rem;
 }
 
 p {
     font-size: .75rem;
     display: inline-block;
     font-weight: lighter;
-    justify-content:space-between;
-}
-
-.block {
-    display: block;
-}
-
-.center {
-    text-align: center;
+    line-height: 1rem;
+    padding-top: .5rem;
 }
 
 h1 .new {
     font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.1rem;
     font-weight: normal;
 }
 
