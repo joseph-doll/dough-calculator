@@ -49,6 +49,7 @@ h1 {
 .userBox {
     float: right;
     clear: both;
+    margin-left: 1.5rem;
 }
 
 p {
