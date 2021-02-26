@@ -3,11 +3,12 @@ html {
 }
 
 body {
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: left;
     background-color: black;
     color: white;
     padding: 10px;
+    text-overflow: wrap;
 }
 .newLabel{
     font-size: 2rem;
@@ -20,6 +21,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     display: block;
+    text-align: center;
 }
 
 .headings {
