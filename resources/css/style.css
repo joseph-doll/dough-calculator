@@ -9,7 +9,7 @@ body {
     margin: 1rem;
     padding: 0;
     width: auto;
-    text-align: left;
+    text-align: right;
 }
 
 h1 {
@@ -53,7 +53,7 @@ h1 {
     float: right;
     clear: both;
     margin-left: 1.5rem;
-    max-width: 8rem;
+    max-width: 7rem;
 }
 
 p {
