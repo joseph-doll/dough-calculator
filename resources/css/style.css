@@ -67,9 +67,10 @@ td {
 
 footer {
     text-align: right;
-    color:rgb(116, 116, 116);
-    font-size: .5rem;
+    color:rgb(56, 56, 56);
+    font-size: .4rem;
     position: fixed;
-    right: 0;
     bottom: 0;
+    right: 50%;
+
 }
