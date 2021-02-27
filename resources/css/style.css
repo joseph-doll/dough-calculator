@@ -65,3 +65,11 @@ td {
     color:greenyellow;
 }
 
+footer {
+    text-align: right;
+    color:rgb(116, 116, 116);
+    font-size: .5rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

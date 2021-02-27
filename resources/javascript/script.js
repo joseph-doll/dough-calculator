@@ -1,4 +1,4 @@
-function toMake() {
+function make() {
     var LSN = document.getElementById("LSN").value;
     var LSM = document.getElementById("LSM").value;
     var MSN = document.getElementById("MSN").value;
