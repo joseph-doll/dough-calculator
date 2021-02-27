@@ -9,55 +9,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Dough Calculator</title>
   <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
-  <link rel="stylesheet" href="resources/css/style.css" type="text/css">
-  <script src="resources/javascript/script.js"></script>
+  <link rel="stylesheet" href="resources/css/newstyle.css" type="text/css">
+  <script src="resources/javascript/script.js" type="text/javascript"></script>
 </head>
-<header></header>
-<body onload="tomorrow()">
-  <h1>TODAY'S DOUGH #s</h1>
-  <!-- user input for tomorrow's skin totals  -->
-  <div class="container">
-    <p class="inlineBlock sizes">Large:<input type="number" id="LSN" class="userBox"></p>
-    <br>
 
-    <p class="inlineBlock sizes">Medium:<input type="number" id="MSN" class="userBox"></p>
-    <br>
+<header>
+    <div></div>
+</header>
 
-    <p class="inlineBlock sizes">Small:<input type="number" id="SSN" class="userBox"></p>
-    <br>
+<body>
 
-    <p class="inlineBlock sizes">Mini:<input type="number" id="MiSN" class="userBox"></p>
-  </div>
-  
-  <h1>SKINS LEFT</h1>
-<!-- user input for available skin numbers -->
-  <p class="inlineBlock sizes">Large:<input type="number" id="LSM" class="userBox"></p>
-  <br>
-
-  <p class="inlineBlock sizes">Medium:<input type="number" id="MSM" class="userBox"></p>
-  <br>
-
-  <p class="inlineBlock sizes">Small:<input type="number" id="SSM" class="userBox"></p>
-  <br>
-
-  <p class="inlineBlock sizes">Mini:<input type="number" id="MiSM" class="userBox"></p>
-  <br>
-  <!-- user input for dough buckets and submission -->
-  <p class="inlineBlock sizes">Buckets Made:<input type="number" id="DBM" class="userBox"></p>
-
-  <!-- calculations/results -->
-  <input type="submit" onclick="toMake(), need();" value="CALCULATE" class="myButton">
-  <br>
-  
-  <!-- results -->
-  <h1 class="inlineBlock">NEEDED FOR <p class="new" id="Tomorrow"></p></h1>
-
-  <div id='Tomorrow Buckets' class="results"></div>
-
-  <h1>LEFT TO MAKE</h1>
-
-  <div id='Make' class="results green"></div>
-
+  <table>
+    <tr>
+      <td colspan="2" class="heading">DOUGH NUMBERS</td>
+      <td></td>
+    </tr>
+    <tr>
+     <td class="sizes">Large:</td>
+     <td><input type="number" id="LSN" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td class="sizes">Medium:</td>
+      <td><input type="number" id="MSN" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td class="sizes">Small:</td>
+      <td><input type="number" id="SSN" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td class="sizes">Mini:</td>
+      <td><input type="number" id="MiSN" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="heading">SKINS REMAINING</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="sizes">Large:</td>
+      <td><input type="number" id="LSM" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td class="sizes">Medium:</td>
+      <td><input type="number" id="MSM" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td class="sizes">Small:</td>
+      <td><input type="number" id="SSM" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td class="sizes">Mini:</td>
+      <td><input type="number" id="MiSM" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td class="sizes">Buckets Made:</td>
+      <td><input type="number" id="DBM" class="inputCell" value=0></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+</table>
+<div class="customButton">
+    <span class="calculate" onclick="toMake(), need();">CALCULATE</span>
+</div>
+<table>
+  <tr>
+    <td class="heading">NEED</td>
+    <td class="heading">MAKE</td>
+  </tr>
+  <tr>
+    <td id="Tomorrow Buckets" class="results1"></td>
+    <td id="Make" class="results2"></td>
+  </tr>
+</table>
 </body>
 
 </html>

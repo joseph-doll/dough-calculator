@@ -2,59 +2,66 @@ body {
     background-color: black;
     color: white;
     font-family: "Josefin Sans", sans-serif;
-    margin: 1rem;
     padding: 0;
-    width: auto;
+    width: 96%;
+    text-align: center;
+    overflow: hidden;
+    margin: 5% 2% 2% 1%;
+    
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 50%;
+    padding: 2% 0 2% 0;
+}
+
+.heading {
+    font-size: 175%;
+}
+
+.inputCell {
     text-align: right;
+    height: 100%;
+    font-size: 125%;
+    background-color: black;
+    border: none;
+    color: white;
+    width: 50%;
+    padding-right: 40%;
 }
 
-h1 {
-    font-size: 1.25rem;
-    font-weight: normal;
-    margin-bottom: 1%;
-}
-
-.results {
-    font-size: 1.5rem;
-    margin-top: .1rem;
-    font-weight: bold;
-}
-
-.myButton {
-    background-color: white;
-    margin: 1rem 0 1rem 0;
-    font-weight: normal;
-}
-
-.green {
-    color: #00e000;
-}
-
-.inlineBlock{
-    display: inline-block;
-}
-
-.userBox {    
-    margin-left: 1rem;
-    max-width: 8rem;
-}
-
-p {
-    font-size: 1rem;
+.sizes {
+    text-align: left;
+    padding-left: 20%;
+    font-size: 100%;
     font-weight: lighter;
 }
 
-h1 .new {
-    font-size: 1.25rem;
-    font-weight: normal;
+.calculate {
+    text-align: center;
+    font-size: 150%;
+    background-color: greenyellow;
+    padding: 9px 8px 4px 8px;
+    color: black;
+    border-radius: 12px;
 }
 
-h2 {
-    font-size: 1.1rem;
-    font-weight: normal;
+.customButton {
+    margin: 3% 0 8% 0;
 }
 
-.container {
-    margin-bottom: 2%;
-    
+.results1 {
+    font-size: 200%;
+    font-weight: bolder;
 }
+
+.results2 {
+    font-size: 200%;
+    font-weight: bolder;
+    color:greenyellow;
+}
+
