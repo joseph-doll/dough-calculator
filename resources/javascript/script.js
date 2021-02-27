@@ -1,4 +1,4 @@
-function doughCalc() {
+function toMake() {
     var LSN = document.getElementById("LSN").value;
     var LSM = document.getElementById("LSM").value;
     var MSN = document.getElementById("MSN").value;
@@ -14,9 +14,19 @@ function doughCalc() {
     var totalMiS = (MiSN - MiSM) / 105;
     var grandTotal = totalLS + totalMS + totalSS + totalMiS;
     var need = grandTotal - DBM;
-    document.getElementById('Skin Display').innerHTML = Math.round(grandTotal * 10) / 10;
-    document.getElementById('Needed').innerHTML = Math.round(need * 10) / 10;
+    document.getElementById('Make').innerHTML = Math.round(need * 10) / 10;
 }
+
+
+function need() {
+    var LSN = document.getElementById("LSN").value;
+    var MSN = document.getElementById("MSN").value;
+    var SSN = document.getElementById("SSN").value;
+    var MiSN = document.getElementById("MiSN").value;
+    var buckets = LSN/28 + MSN/40 + SSN/62 + MiSN/105;
+    document.getElementById('Tomorrow Buckets').innerHTML = Math.round(buckets * 10) /10;
+}
+
 
 function tomorrow() {
     var d = new Date();
@@ -30,5 +40,5 @@ function tomorrow() {
     weekday[5] = "SATURDAY";
   
     var n = weekday[d.getDay()];
-    document.getElementById("tomorrow").innerHTML = n;
+    document.getElementById("Tomorrow").innerHTML = n;
 }

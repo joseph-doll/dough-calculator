@@ -14,58 +14,49 @@
 </head>
 <header></header>
 <body onload="tomorrow()">
-
+  <h1>TODAY'S DOUGH #s</h1>
   <!-- user input for tomorrow's skin totals  -->
-  <h1 class="headings">TODAY'S DOUGH #s</h1>
+  <div class="container">
+    <p class="inlineBlock sizes">Large:<input type="number" id="LSN" class="userBox"></p>
+    <br>
+
+    <p class="inlineBlock sizes">Medium:<input type="number" id="MSN" class="userBox"></p>
+    <br>
+
+    <p class="inlineBlock sizes">Small:<input type="number" id="SSN" class="userBox"></p>
+    <br>
+
+    <p class="inlineBlock sizes">Mini:<input type="number" id="MiSN" class="userBox"></p>
+  </div>
+  
+  <h1>SKINS LEFT</h1>
+<!-- user input for available skin numbers -->
+  <p class="inlineBlock sizes">Large:<input type="number" id="LSM" class="userBox"></p>
   <br>
 
-  <p class="inlineBlock">Large:<input type="number" id="LSN" class="userBox"></p>
+  <p class="inlineBlock sizes">Medium:<input type="number" id="MSM" class="userBox"></p>
   <br>
 
-  <p class="inlineBlock">Medium:<input type="number" id="MSN" class="userBox"></p>
+  <p class="inlineBlock sizes">Small:<input type="number" id="SSM" class="userBox"></p>
   <br>
 
-  <p class="inlineBlock">Small:<input type="number" id="SSN" class="userBox"></p>
-  <br>
-
-  <p class="inlineBlock">Mini:<input type="number" id="MiSN" class="userBox"></p>
-  <br>
-
-  <br>
-  <!-- user input for available skin numbers -->
-  <h1 class="headings">SKINS LEFT</h1>
-  <br>
-
-  <p class="inlineBlock">Large:<input type="number" id="LSM" class="userBox"></p>
-  <br>
-
-  <p class="inlineBlock">Medium:<input type="number" id="MSM" class="userBox"></p>
-  <br>
-
-  <p class="inlineBlock">Small:<input type="number" id="SSM" class="userBox"></p>
-  <br>
-
-  <p class="inlineBlock">Mini:<input type="number" id="MiSM" class="userBox"></p>
-  <br>
-
+  <p class="inlineBlock sizes">Mini:<input type="number" id="MiSM" class="userBox"></p>
   <br>
   <!-- user input for dough buckets and submission -->
-  <p class="inlineBlock">BUCKETS MADE<input type="number" id="DBM" class="userBox"></p>
-  <br>
+  <p class="inlineBlock sizes">Buckets Made:<input type="number" id="DBM" class="userBox"></p>
 
   <!-- calculations/results -->
-  <input type="submit" onclick="doughCalc();" value="CALCULATE" class="myButton">
+  <input type="submit" onclick="toMake(), need();" value="CALCULATE" class="myButton">
   <br>
+  
+  <!-- results -->
+  <h1 class="inlineBlock">NEEDED FOR <p class="new" id="Tomorrow"></p></h1>
 
-  <h1 id="bucketsTotal" class="inlineBlock">NEEDED FOR <p class="new" id="tomorrow"></p></h1>
+  <div id='Tomorrow Buckets' class="results"></div>
 
-  <div id='Skin Display' class="results"></div>
+  <h1>LEFT TO MAKE</h1>
 
-  <br>
-
-  <h1 id="toMake">LEFT TO MAKE</h1>
-
-  <div id='Needed' class="results green"></div>
+  <div id='Make' class="results green"></div>
 
 </body>
 
