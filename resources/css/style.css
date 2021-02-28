@@ -80,14 +80,6 @@ footer {
 /* ruleset for >= 1000px */
 @media only screen and (min-width: 1000px) { 
 td {
-    padding: .5% 0 .5% 0;
-}
-
-.sizes {
-    margin-left:50%;
-}
-
-.inputCell {
-    margin-right:50%;
+    padding: 0 0 0 0;
 }
 }
