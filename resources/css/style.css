@@ -23,6 +23,7 @@ td {
     font-size: 175%;
 }
 
+/* input table */
 .inputCell {
     text-align: right;
     height: 100%;
@@ -41,6 +42,7 @@ td {
     font-weight: lighter;
 }
 
+/* calculation button */
 .calculate {
     text-align: center;
     font-size: 150%;
@@ -54,6 +56,7 @@ td {
     margin: 3% 0 8% 0;
 }
 
+/* results */
 .results1 {
     font-size: 200%;
     font-weight: bolder;
@@ -65,10 +68,26 @@ td {
     color:greenyellow;
 }
 
+/* footer */
 footer {
     text-align: right;
     color:rgb(56, 56, 56);
     font-size: .4rem;
     position: fixed;
     bottom: 0;
+}
+
+/* ruleset for >= 1000px */
+@media only screen and (min-width: 1000px) { 
+td {
+    padding: .5% 0 .5% 0;
+}
+
+.sizes {
+    margin-left:50%;
+}
+
+.inputCell {
+    margin-right:50%;
+}
 }
