@@ -15,7 +15,17 @@ function make() {
     var grandTotal = totalLS + totalMS + totalSS + totalMiS;
     var need = grandTotal - DBM;
     document.getElementById('Make').innerHTML = Math.round(need * 10) / 10;
-}
+        if (need < 0) {
+            document.getElementById('Make').style.color = "red";
+        }
+        else if (need == 0) {
+            document.getElementById('Make').style.color = 'white';
+        }
+        else {
+            document.getElementById('Make').style.color = 'greenyellow';
+        }
+    }
+
 
 function need() {
     var LSN = document.getElementById("LSN").value;

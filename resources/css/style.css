@@ -6,8 +6,7 @@ body {
     width: 96%;
     text-align: center;
     overflow: hidden;
-    margin: 5% 2% 2% 1%;
-    
+    margin: 5% 2% 2% 1%;    
 }
 
 table {
@@ -65,7 +64,6 @@ td {
 .results2 {
     font-size: 200%;
     font-weight: bolder;
-    color:greenyellow;
 }
 
 /* ruleset for >= 1000px */
