@@ -34,7 +34,7 @@ function need() {
     var SSN = document.getElementById("SSN").value;
     var MiSN = document.getElementById("MiSN").value;
     var buckets = LSN/28 + MSN/40 + SSN/62 + MiSN/105;
-    document.getElementById('Tom').innerHTML = Math.round(buckets * 10) /10;
+    document.getElementById('Need').innerHTML = Math.round(buckets * 10) /10;
 }
 
 // writes tomorrow's day of the week in "Tomorrow" // 
