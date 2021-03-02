@@ -66,3 +66,8 @@ td {
     font-size: 200%;
     font-weight: bolder;
 }
+
+.resultText {
+    font-size: 175%;
+    padding-top: 4%;
+}
