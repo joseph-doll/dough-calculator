@@ -1,3 +1,4 @@
+// calculates dough to make | writes in "Make" //
 function make() {
     var LSN = document.getElementById("LSN").value;
     var LSM = document.getElementById("LSM").value;
@@ -24,18 +25,19 @@ function make() {
         else {
             document.getElementById('Make').style.color = 'greenyellow';
         }
-    }
+}
 
-
+// calculates dough needed for tomorrow | writes in "Need" //
 function need() {
     var LSN = document.getElementById("LSN").value;
     var MSN = document.getElementById("MSN").value;
     var SSN = document.getElementById("SSN").value;
     var MiSN = document.getElementById("MiSN").value;
     var buckets = LSN/28 + MSN/40 + SSN/62 + MiSN/105;
-    document.getElementById('Tomorrow Buckets').innerHTML = Math.round(buckets * 10) /10;
+    document.getElementById('Need').innerHTML = Math.round(buckets * 10) /10;
 }
 
+// writes tomorrow's day of the week in "Tomorrow" // 
 function tomorrow() {
     var d = new Date();
     var weekday = new Array(7);

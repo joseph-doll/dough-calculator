@@ -3,10 +3,10 @@ body {
     color: white;
     font-family: "Josefin Sans", sans-serif;
     padding: 0;
-    width: 96%;
+    min-width: 285px;
+    max-width: 500px;
     text-align: center;
-    overflow: hidden;
-    margin: 5% 2% 2% 1%;    
+    margin: auto;
 }
 
 table {
@@ -20,6 +20,7 @@ td {
 
 .heading {
     font-size: 175%;
+    padding-top: 5%;
 }
 
 /* input table */
@@ -52,7 +53,7 @@ td {
 }
 
 .customButton {
-    margin: 3% 0 8% 0;
+    margin: 5% 0 7% 0;
 }
 
 /* results */
@@ -64,53 +65,4 @@ td {
 .results2 {
     font-size: 200%;
     font-weight: bolder;
-}
-
-/* ruleset for >= 1000px */
-@media only screen and (min-width: 1000px) { 
-
-body {
-    margin-top: 3%;
-}
-
-td {
-    padding: 0 0 0 0;
-}
-
-.sizes, .inputCell, .needL .makeR {
-    text-align: center;
-}
-
-.makeL {
-    padding-left: 20%;
-    padding-bottom: 2%;
-}
-
-.makeR {
-    padding-right: 20%;
-    padding-bottom: 2%;
-}
-
-.customButton {
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-
-.heading {
-    padding-bottom: 1%;
-}
-
-.skinsRem {
-    padding: 1% 0 1% 0;
-}
-
-.doughNum {
-    padding: 0 0 1% 0;
-}
-.buckMade {
-    padding-top: 2%;
-}
-.results1, .results2 {
-    font-size: 300%;
-}
 }
